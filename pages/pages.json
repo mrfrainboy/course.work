@@ -1,0 +1,10 @@
+{
+ 	"main": {
+ 	 	"path": "/",
+	 	"file": "index.pug"
+	},
+ 	"order": {
+ 	 	"path": "order/",
+	 	"file": "order.page.pug"
+	}
+}
