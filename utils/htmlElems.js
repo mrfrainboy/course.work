@@ -27,7 +27,7 @@ function getEventElement(event, html) {
 	/* */
 
 	let buybtn = byLabel(doc, 'buy_button');
-	buybtn.setAttribute('href', `/order/?id=${event.event_id}`);
+	buybtn.setAttribute('href', `/order?id=${event.event_id}`);
 
 	return doc;
 }

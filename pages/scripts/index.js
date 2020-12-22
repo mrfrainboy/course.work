@@ -14,7 +14,7 @@ $(document).ready(() => {
 		byLabel(document, 'upcoming_date').innerText = beautifyDateTime(upcomingEvent.date);
 		byLabel(document, 'upcoming_artist').innerText = upcomingEvent.artist_name;
 		byLabel(document, 'upcoming_place').innerText = upcomingEvent.place_city;
-		byLabel(document, 'upcoming_buy').setAttribute('href', `/order/?id=${upcomingEvent.event_id}`);
+		byLabel(document, 'upcoming_buy').setAttribute('href', `/order?id=${upcomingEvent.event_id}`);
 	});
 
 });
