@@ -1,0 +1,74 @@
+/*
+$secondary: #537D8D;
+$tone: #eeeeee;
+ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eeeeee;
+}
+
+#upcoming h1 {
+  font-size: 5rem;
+}
+#upcoming h2 {
+  font-size: 3.5rem;
+}
+#upcoming h3 {
+  font-size: 2.5rem;
+}
+#upcoming::before {
+  content: '↓';
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  z-index: 10;
+  opacity: 0;
+  transform: scale(2) translateY(-20px);
+  animation: animate 5s 1s ease-in-out infinite alternate;
+}
+#upcoming a[aria-label="upcoming_buy"] {
+
+}
+
+
+.nav-items .nav-link {
+  position: relative;
+  margin-right: 1.5em;
+}
+
+.nav-items .nav-link:hover::after {
+  content: '';
+  width: 80%;
+  height: 1px;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  border-radius: 1px;
+  opacity: 0.5;
+  transform: scale(.3, 3);
+  background-color: white;
+  animation: animate 0.7s 0.1s ease-in-out forwards;
+}
+
+.artist-image {
+  object-position: top;
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  padding: 1px;
+}
+
+@keyframes animate {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+

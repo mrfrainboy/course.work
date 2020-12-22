@@ -1,0 +1,28 @@
+
+@media screen and (max-width: 768px) {
+
+  /* Main page */
+  .nav-items .nav-link {
+    margin-right: 0;
+    &:hover::after {
+      width: 30%;
+      left: 35%;
+    }
+  }
+  #upcoming h1 {
+    font-size: xx-large !important;
+  }
+  #upcoming h2 {
+    font-size: x-large !important;
+  }
+  #upcoming h3 {
+    font-size: large !important;
+  }
+  #upcoming::before {
+    content: none !important;
+  }
+  #upcoming.header-container {
+    height: fit-content !important;
+  }
+
+}

@@ -1,0 +1,65 @@
+title
+    | ProEvent
+link(
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css",
+    rel="stylesheet",
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1",
+    crossorigin="anonymous"
+)
+style
+    include ./styles/media.scss
+    include ./styles/styles.scss
+script
+    include ../libs/jquery/jquery.js
+    include ../libs/bootstrap/bootstrap.bundle.min.js
+    include ../utils/htmlElems.js
+    include ./scripts/index.js
+
+nav.navbar.navbar-expand-md.navbar-dark.bg-danger.bg-gradient.sticky-top#navbar
+    .container-fluid.pt-1
+        a.navbar-brand(href='#').fs-4.pt-0.ms-5 ProEvent
+        button.navbar-toggler(
+            type="button",
+            data-bs-toggle="collapse",
+            data-bs-target="#collapsingContent",
+            aria-controls="collapsingContent",
+            aria-expanded="false",
+            aria-label="Toggle navigation"
+        )
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse.align-middle.ms-md-5#collapsingContent
+            .container-fluid
+                ul.navbar-nav.me-auto.mb-2.mb-md-0.nav-items
+                    li.nav-item.text-center
+                        a.nav-link.active(href="#") Найближча подія
+                    li.nav-item.text-center
+                        a.nav-link(href="#events") Список подій
+                    li.nav-item.text-center
+                        a.nav-link(href="#subscribe") Новини
+                    li.nav-item.text-center
+                        a.nav-link(href="#footer") Наші контакти
+.content.position-relative
+    header#upcoming.header.h-100.bg-danger.shadow.position-relative
+        .header-container.container-fluid.bg-dark.h-75.bg-gradient.shadow-lg.p-5
+            .container-fluid.h-100.card.border-0.bg-transparent
+                .row.gs-5.h-100.ps-3.pe-3
+                    .col-md-7.mh-100
+                        img.w-100.mh-100.artist-image.rounded.d-none.d-md-flex(aria-label="upcoming_img")
+                    .col-md-5.mh-100
+                        .card-body.text-white
+                            .card-title.fw-bold.mt-5.pt-3
+                                h2.mt-1(aria-label="upcoming_place")
+                                h1(aria-label="upcoming_artist")
+                                h3(aria-label="upcoming_date")
+                        a.btn.btn-danger.bg-gradient.btn-lg.ms-4.mt-5(aria-label="upcoming_buy")
+                            | Придбати вже зараз
+
+
+    #events.container-fluid.pt-5.pb-5.position-relative
+        .container
+            h2.fs-1.mb-4.pt-1 Список подій
+        .events-content
+
+footer.footer
+    | hey footer
+
