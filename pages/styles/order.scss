@@ -1,0 +1,22 @@
+section {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+form {
+  max-width: 60% !important;
+  align-self: center;
+  -webkit-align-self: center;
+}
+form label {
+  padding-left: 2px;
+}
+label.form-check-label {
+  user-select: none;
+  cursor: pointer;
+}
+
+form.card {
+  user-select: none;
+}

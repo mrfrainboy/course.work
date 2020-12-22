@@ -25,4 +25,18 @@
     height: fit-content !important;
   }
 
+
+  /* Order page */
+
+  form.form {
+    max-width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form.form {
+    max-width: 100% !important;
+    height: 100% !important;
+    padding: 15px !important;
+  }
 }

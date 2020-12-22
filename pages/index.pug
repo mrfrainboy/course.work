@@ -35,8 +35,6 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-danger.bg-gradient.sticky-top#navbar
                     li.nav-item.text-center
                         a.nav-link(href="#events") Список подій
                     li.nav-item.text-center
-                        a.nav-link(href="#subscribe") Новини
-                    li.nav-item.text-center
                         a.nav-link(href="#footer") Наші контакти
 .content.position-relative
     header#upcoming.header.h-100.bg-danger.shadow.position-relative
@@ -44,7 +42,7 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-danger.bg-gradient.sticky-top#navbar
             .container-fluid.h-100.card.border-0.bg-transparent
                 .row.gs-5.h-100.ps-3.pe-3
                     .col-md-7.mh-100
-                        img.w-100.mh-100.artist-image.rounded.d-none.d-md-flex(aria-label="upcoming_img")
+                        img.w-100.mh-100.artist-image.rounded.d-none.d-md-flex.shadow(aria-label="upcoming_img")
                     .col-md-5.mh-100
                         .card-body.text-white
                             .card-title.fw-bold.mt-5.pt-3
@@ -60,6 +58,8 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-danger.bg-gradient.sticky-top#navbar
             h2.fs-1.mb-4.pt-1 Список подій
         .events-content
 
-footer.footer
-    | hey footer
+footer.bg-dark.p-5.text-center
+    p.text-white.fs-5
+        | Виконано студентом Андрієм Прокопчуком
+    p.text-white 2020
 
