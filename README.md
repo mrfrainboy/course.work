@@ -4,7 +4,7 @@
 
 ** Щоб скачати та запустити: **
 
-- Спочатку відкрийте консоль та введіть ** `git clone https://kiritoa@bitbucket.org/kiritoa/andriicoursework.git` **
+- Спочатку відкрийте консоль та введіть ** `https://github.com/mrfrainboy/course.work.git` **
 - Потім перейдіть в папку з проектом та введіть в консоль ** `npm install` ** .
 - Після завершення скачування пакетів потрібно ввести команду ** ` npm run start ` ** .
 
