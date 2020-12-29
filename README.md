@@ -2,7 +2,7 @@
 
 ## Project for coursework
 
-** Щоб скачати та запустити: **
+**Щоб скачати та запустити:**
 
 - Спочатку відкрийте консоль та введіть **`git clone https://github.com/mrfrainboy/course.work.git`**
 - Потім перейдіть в папку з проектом та введіть в консоль **`npm install`** .
